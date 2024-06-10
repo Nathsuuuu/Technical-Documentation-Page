@@ -1,0 +1,144 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 100;
+  padding: 0;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* Navbar styles */
+
+#navbar {
+   
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 220px;
+  background-color: #002d62; /* Dark blue to represent NBA team colors */
+  color: #fff;
+  overflow-y: auto;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar header {
+  text-align: left;
+  margin-bottom: 20px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  font-size: 1.5em; /* Increase font size for the header */
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#navbar ul li {
+  margin-bottom: 15px;
+}
+
+#navbar ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px;
+  transition: background-color 0.3s, letter-spacing 0.3s;
+  letter-spacing: 1px;
+  border-radius: 5px; /* Add border radius for a smoother look */
+}
+
+#navbar ul li a:hover {
+  background-color: #005bb5; /* Lighter blue for hover effect */
+  letter-spacing: 1.5px;
+}
+
+/* Main content styles */
+#main-doc {
+  margin-left: 240px; /* Account for the width of the navbar */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Add border radius for the main content area */
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+.main-section header {
+  font-size: 1.6em;
+  border-bottom: 2px solid #005bb5; /* Add a blue border for section headers */
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+}
+
+.main-section header img {
+  margin-right: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #005bb5; /* Add border around images */
+}
+
+.main-section p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.main-section ul {
+  margin-bottom: 10px;
+  padding-left: 20px;
+}
+
+.main-section li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow-y: visible;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  #main-doc {
+    margin-left: 0;
+    padding: 10px;
+  }
+}
+#navbar {
+  position: fixed;    /* Fixed position to keep it fixed in the viewport */
+  left: 0;            /* Aligns it to the left edge of the viewport */
+  top: 0;             /* Aligns it to the top edge of the viewport */
+  bottom: 0;          /* Sets the height to cover the entire viewport */
+  width: 220px;       /* Width of the navbar */
+  background-color: #002d62; /* Dark blue background color */
+  color: #fff;        /* White text color */
+  padding: 20px;      /* Padding inside the navbar */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Box shadow for a bit of depth */
+  z-index: 1000;      /* Ensures navbar is above other content */
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    width: 100%;      /* Full width on smaller screens */
+    position: fixed;  /* Fixed position to keep it fixed in the viewport */
+    top: 0;           /* Aligns it to the top edge of the viewport */
+    left: 0;          /* Aligns it to the left edge of the viewport */
+    z-index: 1000;    /* Ensures navbar is above other content */
+  }
+}
